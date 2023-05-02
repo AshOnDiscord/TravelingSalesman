@@ -51,7 +51,7 @@ public class main {
     });
 
     if (remaining.size() == 0) {
-      past.add(current);
+      past.add(START);
       float sum2 = sum + spots.get(current).get(START);
       System.out.println(past + " " + sum2);
       return;
