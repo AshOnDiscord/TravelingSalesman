@@ -1,12 +1,17 @@
 class main {
   public static void main(String[] args) {
-    int[][] spots = {
+      final long startTime = System.currentTimeMillis();
+      int[][] spots = {
       {0, 6, 12, 5},
       {6, 0, 8, 9},
       {12, 8, 0, 13},
       {5, 9, 13, 0},
     };
     brute2d(spots);
+
+    final long endTime = System.currentTimeMillis();
+
+    System.out.println("Total execution time: " + (endTime - startTime));
   }
   public static void brute2d(int[][] spots) {
     for (int i = 0; i < spots.length; i++) {
