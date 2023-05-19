@@ -25,7 +25,7 @@ public class Main {
           int distance = distances[0][i] + distances[i][j] + distances[j][k] + distances[k][0];
 
           if (distance < min) {
-            //System.out.println(lookup[i] + " " + lookup[j] + " " + lookup[k] + ": " + distance);
+            System.out.println(lookup[i] + " " + lookup[j] + " " + lookup[k] + ": " + distance);
             // System.out.println(lookup[i] + " ");
             min = distance;
           }
